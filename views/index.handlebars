@@ -1,0 +1,38 @@
+
+<div id="formCont" class="jumbotron">
+    <img id="burgImg" src="https://cdn.pixabay.com/photo/2018/05/29/00/17/burger-3437618__340.png">
+  <div id='logo'>Eat Da Burger!</div>
+  <hr class="my-4">
+  <h2>Add a new burger</h2>
+  <form class="submitBurger">
+
+    <label for="burgName">Name Da Burger:</label>
+    <input type="text" id="burgName" name="burger_name">
+
+<button type="submit">Add Da Burger</button>
+</form>
+</div>
+
+<div id="uneatenBurgs" class="burgCont">
+  <p>Da Available Burgers!</p>
+
+  <ul>
+    {{#each burgers}} 
+      {{#unless devoured}} 
+        {{> burgers/burger-block}} 
+      {{/unless}} 
+    {{/each}}
+  </ul>
+</div>
+
+<div id="eatenBurgs" class="burgCont">
+  <p>Da Burgers You Ate</p>
+
+  <ul>
+    {{#each burgers}}
+      {{#if devoured}} 
+        {{> burgers/burger-block}} 
+      {{/if}} 
+    {{/each}}
+  </ul>
+</div>

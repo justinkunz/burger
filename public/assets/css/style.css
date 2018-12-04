@@ -1,0 +1,38 @@
+li {
+  padding: 5px 0 5px 0;
+  font-size: 16px;
+  margin: 5px 0 5px 0;
+  width: 200px;
+  background-color: #9691db;
+
+}
+.burgCont, #formCont {
+  width: 50%;
+  float: left;
+}
+ul {
+  width: 5%;
+}
+.jumbotron {
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+#logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 45px;
+}
+#formCont {
+  width: 100%;
+}
+body {
+  background-color: rgb(148, 226, 192);
+  font-family: 'Sedgwick Ave', cursive;
+}
+p {
+  margin-left: 10px;
+  font-size: 32px;
+}
+#burgImg {
+  width: 120px;
+}
